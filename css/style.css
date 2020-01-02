@@ -4,8 +4,21 @@ body {
 
 header {
     height: 64px;
+    background-color: white;
+}
+
+nav {
+    position: relative;
+    float: right;
+    margin-right: 24px;
 }
 
 .logo {
+    margin-left: 24px;
+    height: 32px;
+    position: relative;
+}
 
+.gray {
+  color: gray;  
 }
