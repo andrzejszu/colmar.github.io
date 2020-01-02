@@ -1,24 +1,56 @@
+html {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
 
 header {
-    height: 64px;
+    display: flex;
     background-color: white;
+    height: 64px;
+    margin: auto 24px;
+    
+
 }
 
 nav {
-    position: relative;
     float: right;
-    margin-right: 24px;
+
+}
+
+nav ul li {
+    display: inline;;
 }
 
 .logo {
-    margin-left: 24px;
+    width: 420px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.logo .text {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.logo .logoimage {
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+.logo .logoimage img {
     height: 32px;
-    position: relative;
 }
 
 .gray {
   color: gray;  
+}
+
+.container {
+    background-color: rgb(201, 201, 201);
+    height: 1000px;
 }
