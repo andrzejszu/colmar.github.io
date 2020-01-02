@@ -2,48 +2,92 @@ html {
     box-sizing: border-box;
 }
 
-body {
+h1 {
+    font-size: 4em;
+    font-weight: bold;
+    margin-top: 80px;
+    color: rgb(83, 83, 83);
+}
+
+h2 {
+    color: rgb(83, 83, 83);
+}
+
+h3 {
+    color: rgb(83, 83, 83);
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+#home {
     font-family: 'Roboto', sans-serif;
+    position: relative;
 }
 
 header {
-    display: flex;
     background-color: white;
     height: 64px;
-    margin: auto 24px;
-    
-
+    margin: 0 24px; 
 }
 
 nav {
     float: right;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
+nav ul {
+    list-style-type: none;
 }
 
 nav ul li {
-    display: inline;;
+    display: inline;
+    font-size: 1.3em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 16px;
+    color: rgb(32, 32, 32);
+    transition: 500ms linear;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: gray;
 }
 
 .logo {
+    position: absolute;
+    margin: auto 0;
     width: 420px;
     height: 64px;
-    display: flex;
-    align-items: center;
+    padding: 14px 0;
 }
 
+.logo .text p {
+    margin: 0 0;
+}
+    
 .logo .text {
-    font-size: 1.5em;
+    left: 35px;
+    position: absolute;
+    font-size: 1.6em;
     font-weight: 700;
+    max-height: 32px;
 }
 
 .logo .logoimage {
-    display: flex;
-    align-items: center;
-    height: auto;
+
+    width: 40px;
+    height: 42px;
+    position: absolute;
 }
 
 .logo .logoimage img {
-    height: 32px;
+    top: -5px;
+    height: 42px;
+    position: absolute;
 }
 
 .gray {
@@ -51,6 +95,73 @@ nav ul li {
 }
 
 .container {
-    background-color: rgb(201, 201, 201);
-    height: 1000px;
+    
+    height: 2500px;
+}
+
+.section {
+    padding: 32px 24px;
+    background-color: rgb(221, 221, 221);
+    width: 97%;
+    height: 800px;
+    display: inline-flex;
+    justify-content: flex-start;
+}
+
+.section .image {
+    overflow: hidden;
+    width: 60%;
+    height: auto;
+}
+
+.section .image img {
+    height: auto;
+    width: 100%;
+}
+
+.section .text {
+    padding: 40px;
+    width: 27%;
+    color: rgb(83, 83, 83);
+}
+
+.section .text h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: rgb(83, 83, 83);
+    margin-bottom: 90px;
+}
+
+.section .text .button {
+    width: 98%;
+    padding: 25px 0;
+    font-size: 1.7em;
+    color: rgb(255, 255, 255);
+    background-color: rgb(83, 83, 83);
+    display: inline-block;
+    text-align: center;
+    font-size: 1.7em;
+    text-decoration: none;
+    transition: 600ms linear;
+}
+
+.section .text .button:hover {
+    color: rgb(211, 211, 211);
+    background-color: rgb(88, 88, 88);
+}
+
+.whitesection {
+    background-color: rgb(253, 253, 253);
+    height: 850px;
+}
+
+.whitesection h1 {
+    margin-top: 32px;
+    margin-bottom: 24px;
+    font-size: 3em;
+}
+
+.whitesection h2 {
+    font-size: 1.4em;
+    font-weight: 400;
 }
