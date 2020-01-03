@@ -94,15 +94,21 @@ nav ul li a:hover {
   color: gray;  
 }
 
+.background_gray {
+    background-color: rgb(204, 204, 204);
+}
+
 .container {
-    
+    display: flex;
+    flex-direction: column;
     height: 2500px;
 }
 
 .section {
+    box-sizing: border-box;
     padding: 32px 24px;
     background-color: rgb(221, 221, 221);
-    width: 97%;
+    width: 100%;
     height: 800px;
     display: inline-flex;
     justify-content: flex-start;
@@ -120,22 +126,57 @@ nav ul li a:hover {
 }
 
 .section .text {
+    display: flex;
+    flex-direction: column;
     padding: 40px;
-    width: 27%;
+    width: 40%;
     color: rgb(83, 83, 83);
+}
+
+.wider {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+}
+
+.column {
+    box-sizing: border-box;
+    height: 33%;
+    width: 100%;
+    border: 1 solid rgb(43, 43, 43);
+    display: flex;
+    padding: 20px;
+}
+
+.column .text {
+    padding: 15px;
+    width: 65%;
+    height: auto;
+}
+
+.smallimage {
+    width: 35%;
+    height: auto;
+}
+
+.smallimage img {
+    width: 100%;
+    height: auto;
 }
 
 .section .text h2 {
     font-size: 1.8em;
     font-weight: bold;
     color: rgb(83, 83, 83);
-    margin-bottom: 90px;
+    margin-bottom: 80px;
 }
 
 .section .text .button {
     width: 98%;
     padding: 25px 0;
     font-size: 1.7em;
+    font-weight: 500;
     color: rgb(255, 255, 255);
     background-color: rgb(83, 83, 83);
     display: inline-block;
@@ -149,10 +190,22 @@ nav ul li a:hover {
     color: rgb(211, 211, 211);
     background-color: rgb(88, 88, 88);
 }
+/* Id just for padding, for class="image" */
+#nonpadding {
+    padding-top: 0;
+}
 
 .whitesection {
     background-color: rgb(253, 253, 253);
-    height: 850px;
+    height: 900px;
+    width: 100%;
+}
+
+.whitesection .image {
+    overflow: hidden;
+    width: 60%;
+    height: auto;
+    padding-top: 20px;
 }
 
 .whitesection h1 {
@@ -164,4 +217,26 @@ nav ul li a:hover {
 .whitesection h2 {
     font-size: 1.4em;
     font-weight: 400;
+}
+
+.whitesection .column .text h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 15px;
+}
+
+.whitesection .column .text h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 15px;
+}
+
+.whitesection .column .text h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 15px;
+}
+
+.fa.fa-check {
+    font-size: 22px;
 }
